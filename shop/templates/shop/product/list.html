@@ -1,0 +1,71 @@
+<head>
+  <style media="screen">
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    }
+
+    #wrapper:hover .image {
+    opacity: 0.3;
+    }
+
+    #wrapper:hover .middle {
+    opacity: 1;
+    }
+
+    .text {
+    background-color: black;
+    opacity: .7;
+    color: white;
+    font-size: 32px;
+    padding: 32px 32px;
+    height: 245px;
+    width: 200px;
+    }
+  </style>
+</head>
+
+{% extends "shop/base.html" %}
+{% load static %}
+{% block content %}
+  <div class="container-fluid">
+
+    <div style="text-align: center;">
+			<h2>Fresh {{ category }}</h2>
+		</div>
+
+    <hr>
+
+    <div class="row">
+      {% for product in products %}
+        <div class="col-sm-3" id = "wrapper">
+            <div class="row">
+              <div class="col">
+                <div class="text-center">
+                  <img src="{% if product.image %} {{ product.image.url }} {% else %} {% static 'img/default.jpg' %} {% endif %}" alt="..." style="height: 130px; width: auto">
+                </div>
+                <p style="text-align: center;">{{ product.name }}</p>
+                <div  style="text-align: center;"><small>1 kg</small></div>
+                <p style="text-align: center;">৳ {{ product.price }}</p>
+                <a class="btn btn-primary" href="{{ product.get_absolute_url }}" role="button" style="margin-left: 120px; margin-top: 15px; margin-bottom: 50px">
+					    	        Details
+	  					  </a>
+              </div>
+            </div>
+            <a href="{{ product.get_absolute_url }}">
+    					<div class="middle">
+    						<div class="text">Add to shopping cart</div>
+    					</div>
+				    </a>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+{% endblock %}

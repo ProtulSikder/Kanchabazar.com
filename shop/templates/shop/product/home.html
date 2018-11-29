@@ -1,0 +1,176 @@
+{% extends "shop/base.html" %}
+
+{% block content %}
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+      <div class="col-sm-4">
+        <div style="background-image: url(https://www.cdc.gov/features/foodsafetyquiz/foodsafetyquiz_456px.jpg);height: 300px;">
+          <div class="row">
+            <div class="col" style="margin-top: 200px;background-color: white;opacity: .8;height: 100px;text-align: center;">
+              <p style="padding-top: 10px;padding-right: 3px;padding-left: 3px;font-weight: 900;font-size: large;
+                color: black">
+                Every morning freshly picked products by farmers are delivered right at your door-step. No storing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div style="background-image:url(http://1.bp.blogspot.com/-duEZzduTgw8/UAWkAbdL9DI/AAAAAAAAAEg/eHusW8pADUM/s640/shucaih.jpg);height: 300px;">
+          <div class="row">
+            <div class="col" style="margin-top: 200px;background-color: white;opacity: .8;height: 100px;text-align: center">
+              <p style="padding-top: 25px;font-weight: 900;font-size: large;color: black">
+                100% Formalin free.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div style="background-image: url(https://aroundtheworldin60seconds.files.wordpress.com/2017/03/chinese-grapes.jpg?w=665);height: 300px;">
+          <div class="row">
+            <div class="col" style="margin-top: 200px;background-color: white;opacity: .8;height: 100px;text-align: center;">
+              <p style="padding-top: 25px;padding-right: 3px;padding-left: 3px;font-size: large;color: black;font-weight: 900">
+                Full information about the insecticides used in production.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+       </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+      <div class="col-sm-4">
+        <div style="background-image:url(http://hobnobfolsom.com/wp-content/uploads/sites/48/2016/05/liveanimalbird_456px.jpg) ;height: 300px;">
+          <div class="row">
+            <div class="col" style="margin-top: 230px;background-color: white;opacity: .8;height: 100px;text-align: center;">
+              <p style="padding-top: 25px;padding-right: 3px;padding-left: 3px;font-size: large;color: black;
+                font-weight: 900">
+                Video feed about the production.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div style="background-image: url(http://www.dorohoinews.ro/app/gethumb.php?id=121673&w=456&h=294);height: 300px;">
+          <div class="row">
+            <div class="col" style="margin-top: 230px;background-color: white;opacity: .8;height: 100px;text-align: center;">
+              <p style="padding-top: 20px;font-size: large;color: black;font-weight: 900;">
+                Easy payment method.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div style="background-image: url(https://s-media-cache-ak0.pinimg.com/originals/b0/1e/24/b01e246d8e98b2981cbbbad6de7990f6.jpg);height: 300px;">
+          <div class="row">
+            <div class="col" style="margin-top: 230px;background-color: white;opacity: .8;height: 100px;text-align: center;">
+              <p style="padding-top: 25px;font-size: large;color: black;font-weight: 900;">
+                Free home delivery.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+       </div>
+      </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</div>
+
+<div class="row" style="margin-top: 35px;height: 300px;background-image:url(https://www.vandrunenfarms.com/filebin/images/header/apples-to-zucchini.jpg); ">
+  <!--<div class="offset-sm-1 col-sm-2" style="background-color: white;opacity: .8;padding-top: 50px">
+    <h3>
+      Buy KanchaBazar easily at Kancabazar.com
+    </h3>
+  </div>-->
+  <div class="offset-sm-4 col-sm-4" style="background-color: white;opacity: .9;padding-top: 70px;">
+    <div style="text-align: center;">
+      <h4>Shopping is easy at Kancabazar.com</h4>
+    </div>
+    <ul style="margin-top: 20px;">
+      <!-- <li><em>Sign Up or Login to your account.</em></li> -->
+      <li><em>Add your product(s) to the cart.</em></li>
+      <li><em>Provide your info</em></li>
+      <li><em>Check out.</em></li>
+    </ul>
+  </div>
+</div>
+
+<h3 style="text-align: center;margin-top: 35px;"  id = "prods">
+  Kanchabazar Product Categories
+</h3>
+
+<div class="container">
+  <div class="row">
+    <a href="/vegetables/">
+         <div class="col">
+              <div style="background-image: url(https://s-media-cache-ak0.pinimg.com/originals/ea/04/a1/ea04a1585fffb99045d3cdbc7f5d3406.jpg);text-align: center;height: 400px; width: 198px;">
+                <div style="background-color: white;height: 75px;width: 198px;opacity: .9">
+                  <h4 style="padding-top: 20px">Vegetables</h4>
+                </div>
+              </div>
+          </div>
+        </a>
+    <a href="/fish/">
+          <div class="col">
+              <div style="background-image: url(https://www.muezon.com/wp-content/uploads/2017/08/Mathi_EasyFish.jpeg-200x400.jpg);text-align: center;height: 400px; width: 198px;">
+                <div style="background-color: white;height: 75px;width: 198px;opacity: .9">
+                  <h4 style="padding-top: 20px">Fish</h4>
+                </div>
+              </div>
+          </div>
+        </a>
+    <a href="/meat/">
+          <div class="col">
+              <div style="background-image:url(https://images2.laweekly.com/imager/las-top-10-raw-beef-dishes-some-like-i/u/original/4214332/rawbeef.jpg);text-align: center;height: 400px; width: 198px;">
+                <div style="background-color: white;height: 75px;width: 198px;opacity: .9">
+                  <h4 style="padding-top: 20px">Meat</h4>
+                </div>
+              </div>
+          </div>
+        </a>
+    <a href="/fruits/">
+          <div class="col">
+              <div style="background-image: url(https://i.pinimg.com/736x/9c/4a/98/9c4a9896e864399a523784a1b4274d90.jpg);text-align: center;height: 400px; width: 198px;">
+                <div style="background-color: white;height: 75px;width: 198px;opacity: .9;">
+                  <h4 style="padding-top: 20px">Fruits</h4>
+                </div>
+              </div>
+          </div>
+        </a>
+    <a href="/dairy/">
+          <div class="col">
+              <div style="background-image: url(http://cs.i.uol.com.br/cienciaesaude/2011/06/03/leite-caindo-no-copo-1307137750230_200x400.jpg);text-align: center;height: 400px; width: 198px;">
+                <div style="background-color: white;height: 75px;width: 198px;opacity: .9">
+                  <h4 style="padding-top: 20px;">Dairy</h4>
+                </div>
+              </div>
+          </div>
+        </a>
+  </div>
+</div>
+
+{% include "shop/snippets/response.html" %}
+
+{% endblock %}
